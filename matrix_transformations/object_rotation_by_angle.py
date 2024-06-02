@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 def object_rotation(obj, deg):
@@ -11,7 +10,7 @@ def object_rotation(obj, deg):
         [np.sin(deg_radians), np.cos(deg_radians)]
     ])
 
+    # множення матриць
     rotated_obj = np.dot(obj, rotation_matrix)
 
     return rotated_obj
-
