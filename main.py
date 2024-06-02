@@ -21,15 +21,14 @@ Object = np.array([
 
 # draw one changed matrix
 # plot_drawing.draw_plot(object_rotation_by_angle.rotation(Object, 90))
-
+rotated = object_rotation_by_angle.rotation(Batman, 90)
+object_rotation_by_angle.plot_rotated_matrix(Batman, rotated)
 
 # draw scaled matrix
 # plot_drawing.draw_plot(scaling_on_coefficient.scale(Batman, 2))
 
 
 # draw reflected by axis
-# plot_drawing.draw_plot(Object)
-# plot_drawing.draw_plot(reflection_by_axis.axis_reflection(Object, 'x'))
 # plot_drawing.draw_plot(reflection_by_axis.axis_reflection(Object, 'y'))
 
 
@@ -58,3 +57,4 @@ def main(custom_matrix):
 
 if __name__ == '__main__':
     main(Object)
+
