@@ -3,6 +3,7 @@ import plot_drawing
 from matrix_transformations import object_rotation_by_angle
 from matrix_transformations import scaling_on_coefficient
 from matrix_transformations import reflection_by_axis
+from matrix_transformations import axis_slope
 
 Batman = np.array([
     [0, 0], [1, 0.2], [0.4, 1], [0.5, 0.4], [0, 0.8],
@@ -31,4 +32,5 @@ Object = np.array([
 # plot_drawing.draw_plot(reflection_by_axis.axis_reflection(Object, 'y'))
 
 
-
+# draw sloped by axis
+# plot_drawing.draw_plot(axis_slope.slope(Batman, 'y', 5))

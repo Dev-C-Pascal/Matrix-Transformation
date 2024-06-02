@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def object_rotation(obj, deg):
+def rotation(obj, deg):
     deg_radians = np.radians(deg)
 
     # матриця повороту
