@@ -9,3 +9,5 @@ node_modules/
 
 # Ignore specific files
 secret-config.json
+
+test_0.py
