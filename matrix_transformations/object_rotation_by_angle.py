@@ -15,13 +15,3 @@ def object_rotation(obj, deg):
 
     return rotated_obj
 
-
-# Приклад об'єкта
-object1 = np.array([
-    [0, 0], [1, 0.2], [0.4, 1], [0.5, 0.4], [0, 0.8],
-    [-0.5, 0.4], [-0.4, 1], [-1, 0.2], [0, 0]
-])
-
-rotated_object1 = object_rotation(object1, 45)
-
-
