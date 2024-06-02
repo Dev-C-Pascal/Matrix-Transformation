@@ -14,12 +14,13 @@ Object = np.array([
     [1, 1], [0, 0], [1, 0], [3, 4], [4, 0], [0, 3]
 ])
 
+
 # draw to matrix
 # plot_drawing.draw_plot(Batman, Object)
 
 
 # draw one changed matrix
-# plot_drawing.draw_plot(object_rotation_by_angle.object_rotation(Object, 90))
+# plot_drawing.draw_plot(object_rotation_by_angle.rotation(Object, 90))
 
 
 # draw scaled matrix
@@ -34,3 +35,26 @@ Object = np.array([
 
 # draw sloped by axis
 # plot_drawing.draw_plot(axis_slope.slope(Batman, 'y', 5))
+
+
+def main(custom_matrix):
+    choice = input(
+        "Axis_slope -> 'a'\n"
+        "Object_rotation - > 'o'\n"
+        "Reflection_by_axis -> 'r'\n"
+        "Scaling_on_coefficient -> 's'\n"
+        "Input command that you choose:")
+    if choice not in ('a', 'o', 'r', 's'):
+        print("You entered wrong number")
+    elif choice == 'a':
+        plot_drawing.draw_plot(axis_slope.slope(custom_matrix, 'y', 5))
+    elif choice == 'o':
+        plot_drawing.draw_plot(object_rotation_by_angle.rotation(Object, 90))
+    elif choice == 'r':
+        plot_drawing.draw_plot(reflection_by_axis.axis_reflection(Object, 'x'))
+    elif choice == 's':
+        plot_drawing.draw_plot(scaling_on_coefficient.scale(Batman, 2))
+
+
+if __name__ == '__main__':
+    main(Object)
